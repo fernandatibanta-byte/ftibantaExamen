@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ftibantaExamen.Views.vLogin"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="20">
+
+            <!--LOGO (imagen local en Resources/Images)-->
+            <Image Source="logo.png"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="INICIO DE SESION"
+                   TextColor="Purple"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Grid RowSpacing="10"
+                  ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtUsuario"
+                       Placeholder="Ingrese el usuario"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+                <Label Text="Contrasena"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtContrasenia"
+                       Placeholder="Ingrese la contrasena"
+                       IsPassword="True"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+
+                <Button x:Name="btnIniciarSesion"
+                        Text="Iniciar sesion"
+                        Clicked="btnIniciarSesion_Clicked"
+                        Grid.Row="2"
+                        Grid.Column="0"/>
+
+                <Button x:Name="btnAcercaDe"
+                        Text="Acerca de"
+                        Clicked="btnAcercaDe_Clicked"
+                        Grid.Row="2"
+                        Grid.Column="1"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

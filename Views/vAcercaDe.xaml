@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ftibantaExamen.Views.vAcercaDe"
+             Title="Acerca de">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Label Text="ACERCA DE"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="Purple"
+                   HorizontalOptions="Center"/>
+
+            <!--FOTO LOCAL (Resources/Images)-->
+            <Image Source="foto.png"
+                   WidthRequest="180"
+                   HeightRequest="180"
+                   HorizontalOptions="Center"/>
+
+            <Grid RowSpacing="10"
+                  ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:"
+                       FontAttributes="Bold"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Label Text="Maria Fernanda Tibanta"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+                <Label Text="Carrera:"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Label Text="Ingenieria en Sistemas"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+
+                <Label Text="Paralelo:"
+                       FontAttributes="Bold"
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Label Text="A"
+                       Grid.Row="2"
+                       Grid.Column="1"/>
+
+                <Label Text="Asignatura:"
+                       FontAttributes="Bold"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Label Text="Desarrollo para dispositivos moviles"
+                       Grid.Row="3"
+                       Grid.Column="1"/>
+            </Grid>
+
+            <Button x:Name="btnRegresar"
+                    Text="Regresar"
+                    Clicked="btnRegresar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

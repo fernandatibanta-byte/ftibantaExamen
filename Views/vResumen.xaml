@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ftibantaExamen.Views.vResumen"
+             Title="Resumen">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Label x:Name="lblUsuario"
+                   FontSize="14"
+                   HorizontalTextAlignment="End"/>
+
+            <Label Text="RESUMEN"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <!--GRID 9 FILAS x 2 COLUMNAS-->
+            <Grid RowSpacing="10"
+                  ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:"
+                       FontAttributes="Bold"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblNombre"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+
+                <Label Text="Apellido:"
+                       FontAttributes="Bold"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblApellido"
+                       Grid.Row="1"
+                       Grid.Column="1"/>
+
+                <Label Text="Edad:"
+                       FontAttributes="Bold"
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblEdad"
+                       Grid.Row="2"
+                       Grid.Column="1"/>
+
+                <Label Text="Fecha de inicio:"
+                       FontAttributes="Bold"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblFechaInicio"
+                       Grid.Row="3"
+                       Grid.Column="1"/>
+
+                <Label Text="Plan:"
+                       FontAttributes="Bold"
+                       Grid.Row="4"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblPlan"
+                       Grid.Row="4"
+                       Grid.Column="1"/>
+
+                <Label Text="Casillero:"
+                       FontAttributes="Bold"
+                       Grid.Row="5"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblCasillero"
+                       Grid.Row="5"
+                       Grid.Column="1"/>
+
+                <Label Text="Monto Inicial:"
+                       FontAttributes="Bold"
+                       Grid.Row="6"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblMontoInicial"
+                       Grid.Row="6"
+                       Grid.Column="1"/>
+
+                <Label Text="Pago mensual:"
+                       FontAttributes="Bold"
+                       Grid.Row="7"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblPagoMensual"
+                       Grid.Row="7"
+                       Grid.Column="1"/>
+
+                <Label Text="Pago Total:"
+                       FontAttributes="Bold"
+                       Grid.Row="8"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblPagoTotal"
+                       Grid.Row="8"
+                       Grid.Column="1"/>
+
+            </Grid>
+
+            <Button x:Name="btnExportarTXT"
+                    Text="Exportar datos TXT"
+                    Clicked="btnExportarTXT_Clicked"/>
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnNuevoRegistro"
+                        Text="Nuevo registro"
+                        Clicked="btnNuevoRegistro_Clicked"
+                        Grid.Column="0"/>
+
+                <Button x:Name="btnCerrarSesion"
+                        Text="Cerrar sesion"
+                        Clicked="btnCerrarSesion_Clicked"
+                        BackgroundColor="#B71C1C"
+                        Grid.Column="1"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

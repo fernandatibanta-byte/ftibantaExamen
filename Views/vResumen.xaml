@@ -10,8 +10,7 @@
             Spacing="15">
 
             <Label x:Name="lblUsuario"
-                   FontSize="14"
-                   HorizontalTextAlignment="End"/>
+                   Style="{StaticResource usuarioGlobal}"/>
 
             <Label Text="RESUMEN"
                    FontSize="22"
@@ -38,89 +37,108 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="0"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblNombre"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="0"
                        Grid.Column="1"/>
 
                 <Label Text="Apellido:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblApellido"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="1"
                        Grid.Column="1"/>
 
                 <Label Text="Edad:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="2"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblEdad"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="2"
                        Grid.Column="1"/>
 
                 <Label Text="Fecha de inicio:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="3"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblFechaInicio"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="3"
                        Grid.Column="1"/>
 
                 <Label Text="Plan:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="4"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblPlan"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="4"
                        Grid.Column="1"/>
 
                 <Label Text="Casillero:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="5"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblCasillero"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="5"
                        Grid.Column="1"/>
 
                 <Label Text="Monto Inicial:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="6"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblMontoInicial"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="6"
                        Grid.Column="1"/>
 
                 <Label Text="Pago mensual:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="7"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblPagoMensual"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="7"
                        Grid.Column="1"/>
 
                 <Label Text="Pago Total:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="8"
                        Grid.Column="0"/>
 
                 <Label x:Name="lblPagoTotal"
+                       Style="{StaticResource valorGlobal}"
                        Grid.Row="8"
                        Grid.Column="1"/>
 
             </Grid>
 
             <Button x:Name="btnExportarTXT"
+                    Style="{StaticResource BotonGlobal}"
                     Text="Exportar datos TXT"
                     Clicked="btnExportarTXT_Clicked"/>
 
@@ -131,11 +149,13 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="btnNuevoRegistro"
+                        Style="{StaticResource BotonGlobal}"
                         Text="Nuevo registro"
                         Clicked="btnNuevoRegistro_Clicked"
                         Grid.Column="0"/>
 
                 <Button x:Name="btnCerrarSesion"
+                        Style="{StaticResource BotonGlobal}"
                         Text="Cerrar sesion"
                         Clicked="btnCerrarSesion_Clicked"
                         BackgroundColor="#B71C1C"

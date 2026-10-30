@@ -34,31 +34,37 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Usuario"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtUsuario"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Ingrese el usuario"
                        Grid.Row="0"
                        Grid.Column="1"/>
 
                 <Label Text="Contrasena"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtContrasenia"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Ingrese la contrasena"
                        IsPassword="True"
                        Grid.Row="1"
                        Grid.Column="1"/>
 
                 <Button x:Name="btnIniciarSesion"
+                        Style="{StaticResource BotonGlobal}"
                         Text="Iniciar sesion"
                         Clicked="btnIniciarSesion_Clicked"
                         Grid.Row="2"
                         Grid.Column="0"/>
 
                 <Button x:Name="btnAcercaDe"
+                        Style="{StaticResource BotonGlobal}"
                         Text="Acerca de"
                         Clicked="btnAcercaDe_Clicked"
                         Grid.Row="2"

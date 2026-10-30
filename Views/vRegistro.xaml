@@ -10,8 +10,7 @@
             Spacing="15">
 
             <Label x:Name="lblUsuario"
-                   FontSize="14"
-                   HorizontalTextAlignment="End"/>
+                   Style="{StaticResource usuarioGlobal}"/>
 
             <Label Text="REGISTRO"
                    TextColor="Blue"
@@ -32,28 +31,34 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
 
                 <Label Text="Apellido"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="1"/>
 
                 <Label Text="Edad"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="2"/>
 
                 <Entry x:Name="txtNombre"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Ingresar Nombre"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtApellido"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Ingresar Apellido"
                        Grid.Row="1"
                        Grid.Column="1"/>
 
                 <Entry x:Name="txtEdad"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Ingresar Edad"
                        Keyboard="Numeric"
                        MaxLength="3"
@@ -78,6 +83,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Fecha de inicio"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
 
@@ -87,6 +93,7 @@
                             Grid.Column="1"/>
 
                 <Label Text="Plan"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
@@ -103,6 +110,7 @@
                 </Picker>
 
                 <Label Text="Casillero"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="2"
                        Grid.Column="0"/>
 
@@ -114,10 +122,12 @@
                         Grid.Column="1"/>
 
                 <Label Text="Monto Inicial"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="3"
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtMontoInicial"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Entre 120 y 600"
                        Keyboard="Numeric"
                        TextChanged="txtMontoInicial_TextChanged"
@@ -125,12 +135,14 @@
                        Grid.Column="1"/>
 
                 <Button x:Name="btnCalcular"
+                        Style="{StaticResource BotonGlobal}"
                         Text="Calcular Pago mensual"
                         Clicked="btnCalcular_Clicked"
                         Grid.Row="4"
                         Grid.Column="0"/>
 
                 <Entry x:Name="txtPagoMensual"
+                       Style="{StaticResource entryGlobal}"
                        Placeholder="Pago mensual"
                        IsReadOnly="True"
                        Grid.Row="4"
@@ -139,6 +151,7 @@
 
             <!--FUERA DEL GRID-->
             <Button x:Name="btnVerResumen"
+                    Style="{StaticResource BotonGlobal}"
                     Text="Ver Resumen"
                     Clicked="btnVerResumen_Clicked"/>
 

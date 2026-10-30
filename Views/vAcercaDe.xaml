@@ -35,43 +35,52 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="0"
                        Grid.Column="0"/>
 
                 <Label Text="Maria Fernanda Tibanta"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="0"
                        Grid.Column="1"/>
 
                 <Label Text="Carrera:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
                 <Label Text="Ingenieria en Sistemas"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="1"
                        Grid.Column="1"/>
 
                 <Label Text="Paralelo:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="2"
                        Grid.Column="0"/>
 
                 <Label Text="A"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="2"
                        Grid.Column="1"/>
 
                 <Label Text="Asignatura:"
+                       Style="{StaticResource labelGlobal}"
                        FontAttributes="Bold"
                        Grid.Row="3"
                        Grid.Column="0"/>
 
                 <Label Text="Desarrollo para dispositivos moviles"
+                       Style="{StaticResource labelGlobal}"
                        Grid.Row="3"
                        Grid.Column="1"/>
             </Grid>
 
             <Button x:Name="btnRegresar"
+                    Style="{StaticResource BotonGlobal}"
                     Text="Regresar"
                     Clicked="btnRegresar_Clicked"/>
 

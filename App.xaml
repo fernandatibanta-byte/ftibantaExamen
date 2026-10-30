@@ -6,6 +6,48 @@
     <Application.Resources>
         <ResourceDictionary>
 
+            <!--ESTILOS GLOBALES-->
+
+            <!--Etiquetas de los campos-->
+            <Style x:Key="labelGlobal" TargetType="Label">
+                <Setter Property="TextColor" Value="Navy"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+
+            <!--Etiquetas que muestran valores (Resumen)-->
+            <Style x:Key="valorGlobal" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="BackgroundColor" Value="#E5E7EB"/>
+                <Setter Property="Padding" Value="5"/>
+            </Style>
+
+            <!--Usuario conectado-->
+            <Style x:Key="usuarioGlobal" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkSlateGray"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+            </Style>
+
+            <!--Cajas de texto-->
+            <Style x:Key="entryGlobal" TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="BackgroundColor" Value="#F5F5F5"/>
+                <Setter Property="HeightRequest" Value="45"/>
+            </Style>
+
+            <!--Botones-->
+            <Style x:Key="BotonGlobal" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#6A1B9A"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="CornerRadius" Value="10"/>
+                <Setter Property="HeightRequest" Value="50"/>
+            </Style>
+
             <!--<ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
